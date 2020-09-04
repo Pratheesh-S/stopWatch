@@ -1,0 +1,58 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <link rel="stylesheet" href="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/css/bootstrap.min.css" integrity="sha384-9aIt2nRpC12Uk9gS9baDl411NQApFmC26EwAOH8WgZl5MYYxFfc+NcPb1dKGj7Sk" crossorigin="anonymous">
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.14.0/js/all.min.js" integrity="sha512-YSdqvJoZr83hj76AIVdOcvLWYMWzy6sJyIMic2aQz5kh2bPTd9dzY3NtdeEAzPp/PhgZqr4aJObB3ym/vsItMg==" crossorigin="anonymous"></script>
+    <link rel="stylesheet" type="text/css" href="css/style.css">
+    <title>Document</title>
+</head>
+<body>
+<div class="container p-5">
+   <div class="card">
+       <div class="card-header bg-primary ">
+        <h4 class="text-white bg-info  text-center  p-3">STOP WATCH</h4>
+       </div>
+       <div class="card-body bg-dark text-white">
+            <div class=" d-flex flex-wrap px-5">
+               
+                <h2 class="ml-2 mx-auto "><span id="hour">00</span>h</h2>
+                <h2 class="ml-2 mx-auto"><span id="minute">00</span>m</h2>
+                <h2 class="ml-2 mx-auto"><span id="second">00</span>s</h2>
+                <h2 class="ml-2 mx-auto"><span id="millisecond">00</span>ms</h2>
+            </div>
+            <div class="d-flex flex-wrap m-auto">
+                <button onclick="start()" id="start" class="btn btn-success mx-auto mt-3" >start</button>
+                <button onclick="pause()" id="pause" class="btn btn-primary mx-auto mt-3" >pause</button>
+                <button onclick="reset()" id="reset" class="btn btn-danger mx-auto mt-3">reset</button>
+                <button onclick="save()" id="save" class="btn btn-info mx-auto mt-3">save</button>
+
+            </div>
+            <table class="table table-dark mt-5" style="visibility: hidden;">
+                <thead class="bg-info">
+                    <th>S.No</th>
+                   <th>Time</th>
+
+                </thead>
+                <tbody id="tbody">
+                   
+                </tbody>
+            </table>
+       </div>
+   </div>
+</div>
+
+
+
+
+
+    
+    <!-- java script -->
+<script src="https://code.jquery.com/jquery-3.5.1.slim.min.js" integrity="sha384-DfXdz2htPH0lsSSs5nCTpuj/zy4C+OGpamoFVy38MVBnE+IbbVYUew+OrCXaRkfj" crossorigin="anonymous"></script>
+<script src="https://cdn.jsdelivr.net/npm/popper.js@1.16.0/dist/umd/popper.min.js" integrity="sha384-Q6E9RHvbIyZFJoft+2mJbHaEWldlvI9IOYy5n3zV9zzTtmI3UksdQRVvoxMfooAo" crossorigin="anonymous"></script>
+<script src="https://stackpath.bootstrapcdn.com/bootstrap/4.5.0/js/bootstrap.min.js" integrity="sha384-OgVRvuATP1z7JjHLkuOU7Xw704+h835Lr+6QL9UvYjZE3Ipu6Tp75j7Bh/kR0JKI" crossorigin="anonymous"></script>
+
+    <script src="java-script/script.js" ></script>
+</body>
+</html>
